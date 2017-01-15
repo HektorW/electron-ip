@@ -8,7 +8,7 @@ function createWindow() {
   win = new BrowserWindow({ width: 300, height: 200 })
 
   win.loadURL(format({
-    pathname: join(__dirname, 'index.html'),
+    pathname: join(__dirname, 'client/index.html'),
     protocol: 'file:',
     slashes: true,
   }))

@@ -1,14 +1,19 @@
 {
   "name": "electron-ip",
   "version": "1.0.0",
+  "description": "Electron ip",
   "main": "index.js",
   "repository": "https://github.com/HektorW/electron-ip",
   "author": "Hektor Wallin <hektorw@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "build",
+    "pack": "build --dir"
   },
   "devDependencies": {
+    "electron": "^1.4.14",
+    "electron-builder": "^11.2.5",
     "eslint": "^3.13.1",
     "eslint-config-airbnb": "^14.0.0",
     "eslint-plugin-import": "^2.2.0",
@@ -16,6 +21,8 @@
     "eslint-plugin-react": "^6.9.0"
   },
   "dependencies": {
-    "electron": "^1.4.14"
+  },
+  "build": {
+    "appId": "com.hektorw.electron-ip"
   }
 }
